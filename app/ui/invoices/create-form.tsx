@@ -16,7 +16,7 @@ const initialState = { message: null, errors: {} };
 
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const [state, dispatch] = useFormState(createInvoice, initialState);
-
+//TODO: add validation to other fields
   return (
     <form action={dispatch}>
       <div className="rounded-md bg-gray-50 p-4 md:p-6">
